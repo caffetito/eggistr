@@ -32,7 +32,7 @@ function App() {
 </Fab>
 
 <Fab className='button' color='#299ae6'>
-  &nbsp;<span style={{ fontSize: '24px' }}><GiTransparentTubes /></span>&nbsp;Syntetika&nbsp;
+  &nbsp;<span style={{ fontSize: '24px' }}><GiTransparentTubes /></span>&nbsp;Umělé&nbsp;
 </Fab>
 
 <Fab className='button' color='#299ae6'>
