@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'ui-neumorphism/dist/index.css';
 import './App.css';
 
-import {MdOpacity} from 'react-icons/md'
 import {GiWool, GiCottonFlower, GiFeather, GiEmptyWoodBucketHandle, GiTransparentTubes,GiTShirt} from 'react-icons/gi'
 
-import { Button, IconButton, Icon, ListItem, ListItemGroup, DocCard, Card, CardAction, CardContent, ProgressCircular, Subtitle1, Subtitle2, Fab } from 'ui-neumorphism';
+import { ProgressCircular, Fab } from 'ui-neumorphism';
 
 function App() {
   return (
