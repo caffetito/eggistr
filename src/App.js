@@ -15,9 +15,15 @@ import { ProgressCircular, Fab, Dialog, Card, Button } from 'ui-neumorphism';
 
 const App = () => {
     const [washTypeSelected, setWashTypeSelected] = useState(false);
+    const [confirmed, setConfirmed] = useState(false);
 
     const addToWash = () => setWashTypeSelected(true);
     const removeFromWash = () => setWashTypeSelected(false);
+    const confirm = () => {
+        removeFromWash();
+        setConfirmed(true);
+        setTimeout(() => setConfirmed(false), 1000);
+    };
 
     return (
         <div className='App' style={{ width: '300px', margin: '0 auto' }}>
@@ -28,6 +34,7 @@ const App = () => {
                 width={20}
                 color='#299ae6'
                 style={{ margin: '3rem auto 1rem' }}
+                indeterminate={confirmed}
             >
                 52
             </ProgressCircular>
@@ -82,13 +89,7 @@ const App = () => {
                     Přidat novou várku prádla?
                     <br />
                     <Button onClick={removeFromWash}>Zrušit</Button>
-                    <Button
-                        onClick={() => {
-                            removeFromWash();
-                        }}
-                    >
-                        Potvrdit
-                    </Button>
+                    <Button onClick={confirm}>Potvrdit</Button>
                 </Card>
             </Dialog>
         </div>
