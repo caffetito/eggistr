@@ -10,8 +10,7 @@ import {
     GiTShirt,
 } from 'react-icons/gi';
 import { ProgressCircular, Fab, Dialog, Card, Button } from 'ui-neumorphism';
-
-const LOCAL_STORAGE_KEY = 'washCycles';
+import { LOCAL_STORAGE_KEY } from '../constants';
 
 const Home = () => {
     const [washTypeSelected, setWashTypeSelected] = useState(false);
@@ -41,7 +40,7 @@ const Home = () => {
     };
 
     return (
-        <div className='App' style={{ width: '300px', margin: '0 auto' }}>
+        <div className='wrapper'>
             <ProgressCircular
                 elevated
                 size={200}
