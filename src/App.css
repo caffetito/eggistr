@@ -1,39 +1,27 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .card {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 2rem 2rem;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
 }
 
 .button {
-  margin: 0.8rem 0.4rem;
+    margin: 0.8rem 0.4rem;
 }
 
 button {
-  width: 110px;
+    width: 110px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stats {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
 }
